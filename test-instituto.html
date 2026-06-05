@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IES Juan de Lanuza — Chatbot de Departamentos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a2e;
+      padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .instituto-header {
+      background: #1a5276;
+      color: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+    }
+    .instituto-header h1 { font-size: 28px; margin-bottom: 8px; }
+    .instituto-header p { opacity: 0.85; font-size: 15px; }
+    .departamentos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .dep-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s;
+      cursor: default;
+    }
+    .dep-card:hover { transform: translateY(-4px); }
+    .dep-card h3 { font-size: 16px; color: #1a5276; margin-bottom: 6px; }
+    .dep-card p { font-size: 13px; color: #666; }
+    .test-section {
+      background: #fff;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .test-section h2 { font-size: 20px; margin-bottom: 12px; color: #1a5276; }
+    .test-section p { font-size: 14px; color: #666; margin-bottom: 8px; }
+    .test-section code {
+      background: #f0f4f8;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="instituto-header">
+    <h1>IES Juan de Lanuza</h1>
+    <p>Página de prueba del chatbot de departamentos. Haz clic en la burbuja de abajo a la derecha y pregunta por cualquier asignatura.</p>
+  </div>
+
+  <div class="departamentos-grid">
+    <div class="dep-card"><h3>Geografía e Historia</h3><p>Programaciones, criterios, profesorado</p></div>
+    <div class="dep-card"><h3>Ciencias Naturales</h3><p>Biología, Geología, programaciones</p></div>
+    <div class="dep-card"><h3>Matemáticas</h3><p>Programaciones, criterios, evaluación</p></div>
+    <div class="dep-card"><h3>Lengua y Literatura</h3><p>Programaciones, lecturas, criterios</p></div>
+    <div class="dep-card"><h3>Inglés</h3><p>Programaciones, criterios, profesorado</p></div>
+    <div class="dep-card"><h3>Física y Química</h3><p>Programaciones, criterios, laboratorio</p></div>
+    <div class="dep-card"><h3>Tecnología</h3><p>Programaciones, criterios, proyectos</p></div>
+    <div class="dep-card"><h3>Educación Física</h3><p>Programaciones, criterios, actividades</p></div>
+    <div class="dep-card"><h3>Economía</h3><p>Programaciones, criterios, emprendimiento</p></div>
+    <div class="dep-card"><h3>Filosofía</h3><p>Programaciones, criterios, valores</p></div>
+    <div class="dep-card"><h3>Francés</h3><p>Programaciones, criterios, recursos</p></div>
+    <div class="dep-card"><h3>Latín</h3><p>Programaciones, criterios, cultura clásica</p></div>
+    <div class="dep-card"><h3>Música</h3><p>Programaciones, criterios, actividades</p></div>
+    <div class="dep-card"><h3>Plástica</h3><p>Programaciones, criterios, proyectos</p></div>
+    <div class="dep-card"><h3>Religión</h3><p>Programaciones, criterios, valores</p></div>
+    <div class="dep-card"><h3>Orientación</h3><p>Programaciones, tutorías, apoyo</p></div>
+    <div class="dep-card"><h3>Hostelería</h3><p>Programaciones, criterios, taller</p></div>
+    <div class="dep-card"><h3>Energías Renovables</h3><p>Programaciones, criterios, proyectos</p></div>
+    <div class="dep-card"><h3>FOL</h3><p>Formación y Orientación Laboral</p></div>
+    <div class="dep-card"><h3>Servicios a la Comunidad</h3><p>Dependencia, programaciones</p></div>
+  </div>
+
+  <div class="test-section">
+    <h2>🧪 Preguntas de prueba</h2>
+    <p>Prueba a escribir en el chatbot:</p>
+    <p><code>¿Dónde están las programaciones de matemáticas?</code></p>
+    <p><code>¿Qué criterios de evaluación tiene tecnología?</code></p>
+    <p><code>¿Quiénes son los profesores de inglés?</code></p>
+    <p><code>¿Dónde encuentro los documentos de filosofía?</code></p>
+    <p><code>¿Cómo se evalúa en educación física?</code></p>
+    <p><code>¿Qué departamento da biología?</code></p>
+  </div>
+
+  <script src="/salida/ies-juan-de-lanuza.js"></script>
+</body>
+</html>

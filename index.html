@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot3301 — No es IA. Es lógica.</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-contenedor">
+      <a href="#" class="logo">&gt; chatbot<span class="logo-num">3301</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#por-que">¿Por qué sin IA?</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="/plataforma" class="btn-nav">Acceder</a></li>
+      </ul>
+      <button class="hamburguesa" id="hamburguesa" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO (INTACTO) ========== -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="canvasRed"></canvas>
+    <div class="hero-contenido">
+      <div class="hero-badge">Beta abierta · Gratuito</div>
+      <h1 class="hero-titulo">
+        No es <span class="texto-rojo glitch-texto" data-glitch>IA</span>.
+        Es <span class="texto-azul glitch-texto" data-glitch>lógica</span>.
+      </h1>
+      <p class="hero-subtitulo">Chatbots para negocios que responden al instante, sin alucinaciones y sin coste por consulta. Configúralo en 2 minutos, pégalo en tu web y olvídate de repetir lo mismo cada día.</p>
+      <div class="hero-botones">
+        <a href="/plataforma" class="btn btn-azul">Probar gratis</a>
+        <a href="#demo" class="btn btn-borde">Ver demo ↓</a>
+      </div>
+      <p class="hero-pista">Sin registro · Sin tarjeta · Sin IA</p>
+    </div>
+  </section>
+
+  <!-- ========== DEMO INTERACTIVA ========== -->
+  <section class="demo" id="demo">
+    <div class="seccion-header">
+      <span class="seccion-tag">&gt; DEMO</span>
+      <h2>Pruébalo ahora mismo</h2>
+      <p>Este chatbot está funcionando en esta misma página. Pregúntale lo que quieras sobre Chatbot3301.</p>
+    </div>
+    <div class="demo-contenedor">
+      <div class="demo-telefono">
+        <div class="telefono-superior">
+          <span class="telefono-camara"></span>
+          <span class="telefono-titulo">Chatbot3301</span>
+        </div>
+        <div class="telefono-pantalla">
+          <div class="chat-demo" id="chatDemo">
+            <div class="chat-mensaje bot">
+              <span class="chat-avatar">🤖</span>
+              <div class="chat-burbuja">¡Hola! Soy el asistente de <strong>Chatbot3301</strong>. ¿Qué quieres saber?</div>
+            </div>
+          </div>
+          <div class="chat-input-demo">
+            <input type="text" id="chatDemoInput" placeholder="Escribe tu pregunta...">
+            <button id="chatDemoEnviar" aria-label="Enviar mensaje">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 12 5 19 12"/><line x1="12" y1="19" x2="12" y2="5"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="demo-info">
+        <div class="demo-ventajas">
+          <div class="ventaja-item anim-reveal">
+            <span class="ventaja-icono">⚡</span>
+            <div><strong>Respuesta instantánea</strong><p>Menos de 1 milisegundo. Sin llamadas a APIs externas. Sin latencia.</p></div>
+          </div>
+          <div class="ventaja-item anim-reveal">
+            <span class="ventaja-icono">🎯</span>
+            <div><strong>100% fiable</strong><p>No alucina. No se inventa nada. Solo responde lo que está definido en su configuración.</p></div>
+          </div>
+          <div class="ventaja-item anim-reveal">
+            <span class="ventaja-icono">🛡️</span>
+            <div><strong>Sin dependencias</strong><p>Sin OpenAI. Sin APIs de pago. Sin conexión a internet. Funciona hasta offline.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CÓMO FUNCIONA ========== -->
+  <section class="como-funciona" id="como-funciona">
+    <div class="seccion-header">
+      <span class="seccion-tag">&gt; PROCESO</span>
+      <h2>Configúralo en 2 minutos</h2>
+      <p>Sin programar. Sin instalar nada. Sin depender de nadie.</p>
+    </div>
+    <div class="pasos-grid">
+      <div class="paso-card anim-reveal">
+        <div class="paso-numero">01</div>
+        <div class="paso-icono">📝</div>
+        <h3>Rellena el formulario</h3>
+        <p>Escribe las preguntas frecuentes de tus clientes y las respuestas que quieres dar. Elige el color de tu widget.</p>
+      </div>
+      <div class="paso-conector">
+        <div class="conector-linea"></div>
+        <div class="conector-pulso"></div>
+      </div>
+      <div class="paso-card anim-reveal">
+        <div class="paso-numero">02</div>
+        <div class="paso-icono">⚙️</div>
+        <h3>La Fábrica lo genera</h3>
+        <p>Nuestro motor de plantillas crea un archivo JavaScript único para tu negocio en milisegundos.</p>
+      </div>
+      <div class="paso-conector">
+        <div class="conector-linea"></div>
+        <div class="conector-pulso"></div>
+      </div>
+      <div class="paso-card anim-reveal">
+        <div class="paso-numero">03</div>
+        <div class="paso-icono">📋</div>
+        <h3>Pega una línea</h3>
+        <p>Copia el script generado y pégalo en tu web. El chatbot aparece automáticamente. Sin configurar nada más.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ¿POR QUÉ SIN IA? ========== -->
+  <section class="por-que" id="por-que">
+    <div class="seccion-header">
+      <span class="seccion-tag">&gt; FILOSOFÍA</span>
+      <h2>¿Por qué sin Inteligencia Artificial?</h2>
+      <p>Porque lo simple funciona mejor. Y no miente.</p>
+    </div>
+    <div class="comparativa-grid">
+      <div class="comparativa-card mala anim-reveal">
+        <div class="comparativa-icono">🤖</div>
+        <div class="comparativa-titulo">Chatbot con IA</div>
+        <ul>
+          <li data-icon="❌">Puede inventarse respuestas</li>
+          <li data-icon="❌">Depende de servidores externos</li>
+          <li data-icon="❌">Cuesta dinero por consulta</li>
+          <li data-icon="❌">Necesita conexión a internet</li>
+          <li data-icon="❌">No sabes qué va a responder</li>
+        </ul>
+      </div>
+      <div class="comparativa-vs">
+        <span>VS</span>
+      </div>
+      <div class="comparativa-card buena anim-reveal">
+        <div class="comparativa-icono">&gt;_</div>
+        <div class="comparativa-titulo">Chatbot3301</div>
+        <ul>
+          <li data-icon="✅">Solo responde lo definido</li>
+          <li data-icon="✅">Funciona en el navegador del cliente</li>
+          <li data-icon="✅">0€ por consulta</li>
+          <li data-icon="✅">Funciona offline si quieres</li>
+          <li data-icon="✅">100% predecible y controlado</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PLANES ========== -->
+  <section class="planes" id="planes">
+    <div class="seccion-header">
+      <span class="seccion-tag">&gt; PRECIOS</span>
+      <h2>Planes</h2>
+      <p>Empieza gratis. Escala cuando quieras.</p>
+    </div>
+    <div class="planes-grid">
+      <div class="plan-card anim-reveal">
+        <div class="plan-header">
+          <h3>Gratuito</h3>
+          <p class="plan-precio">0€<span>/mes</span></p>
+        </div>
+        <ul>
+          <li>✅ Hasta 10 preguntas</li>
+          <li>✅ Widget personalizado</li>
+          <li>✅ 1 chatbot</li>
+          <li>✅ Marca "Powered by Chatbot3301"</li>
+          <li>✅ Actualizaciones ilimitadas</li>
+        </ul>
+        <a href="/plataforma" class="btn btn-borde btn-block">Empezar gratis</a>
+      </div>
+      <div class="plan-card destacado anim-reveal">
+        <div class="plan-etiqueta">Popular</div>
+        <div class="plan-header">
+          <h3>Pro</h3>
+          <p class="plan-precio">20€<span>/mes</span></p>
+        </div>
+        <ul>
+          <li>✅ Preguntas ilimitadas</li>
+          <li>✅ Sin marca Chatbot3301</li>
+          <li>✅ Colores personalizados</li>
+          <li>✅ Árboles de decisión</li>
+          <li>✅ Soporte prioritario</li>
+        </ul>
+        <a href="/plataforma" class="btn btn-azul btn-block">Empezar Pro</a>
+      </div>
+      <div class="plan-card anim-reveal">
+        <div class="plan-header">
+          <h3>Agencia</h3>
+          <p class="plan-precio">100€<span>/mes</span></p>
+        </div>
+        <ul>
+          <li>✅ Hasta 20 chatbots</li>
+          <li>✅ Todo lo del plan Pro</li>
+          <li>✅ Panel multi-cliente</li>
+          <li>✅ Estadísticas avanzadas</li>
+          <li>✅ API de generación</li>
+        </ul>
+        <a href="/plataforma" class="btn btn-borde btn-block">Empezar Agencia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PARA QUIÉN ========== -->
+  <section class="para-quien" id="para-quien">
+    <div class="seccion-header">
+      <span class="seccion-tag">&gt; AUDIENCIA</span>
+      <h2>¿Para quién es?</h2>
+      <p>Cualquier negocio que responda las mismas preguntas cada día.</p>
+    </div>
+    <div class="iconos-grid">
+      <div class="icono-item anim-reveal"><span class="icono-emoji">🍺</span><span class="icono-texto">Bares</span></div>
+      <div class="icono-item anim-reveal"><span class="icono-emoji">🦷</span><span class="icono-texto">Clínicas</span></div>
+      <div class="icono-item anim-reveal"><span class="icono-emoji">🔧</span><span class="icono-texto">Talleres</span></div>
+      <div class="icono-item anim-reveal"><span class="icono-emoji">💇</span><span class="icono-texto">Peluquerías</span></div>
+      <div class="icono-item anim-reveal"><span class="icono-emoji">🏠</span><span class="icono-texto">Inmobiliarias</span></div>
+      <div class="icono-item anim-reveal"><span class="icono-emoji">🛒</span><span class="icono-texto">Ecommerce</span></div>
+      <div class="icono-item anim-reveal"><span class="icono-emoji">🏋️</span><span class="icono-texto">Gimnasios</span></div>
+      <div class="icono-item anim-reveal"><span class="icono-emoji">🐾</span><span class="icono-texto">Veterinarios</span></div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq" id="faq">
+    <div class="seccion-header">
+      <span class="seccion-tag">&gt; DUDAS</span>
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item anim-reveal">
+        <button class="faq-pregunta" aria-expanded="false">
+          <span>¿Necesito saber programar?</span>
+          <span class="faq-icono">+</span>
+        </button>
+        <div class="faq-respuesta">
+          <p>No. Solo rellenas un formulario con tus preguntas y respuestas. La Fábrica genera el código por ti. Tú solo pegas una línea en tu web.</p>
+        </div>
+      </div>
+      <div class="faq-item anim-reveal">
+        <button class="faq-pregunta" aria-expanded="false">
+          <span>¿Puedo cambiar las respuestas después?</span>
+          <span class="faq-icono">+</span>
+        </button>
+        <div class="faq-respuesta">
+          <p>Sí. Vuelves a la plataforma, editas lo que necesites, regeneras el script y reemplazas el anterior. Tarda segundos.</p>
+        </div>
+      </div>
+      <div class="faq-item anim-reveal">
+        <button class="faq-pregunta" aria-expanded="false">
+          <span>¿El chatbot usa inteligencia artificial?</span>
+          <span class="faq-icono">+</span>
+        </button>
+        <div class="faq-respuesta">
+          <p>No. Usa lógica pura basada en patrones y palabras clave. No alucina, no se inventa nada, no depende de OpenAI ni de ninguna API externa.</p>
+        </div>
+      </div>
+      <div class="faq-item anim-reveal">
+        <button class="faq-pregunta" aria-expanded="false">
+          <span>¿Qué pasa si alguien pregunta algo que no está definido?</span>
+          <span class="faq-icono">+</span>
+        </button>
+        <div class="faq-respuesta">
+          <p>El chatbot responde ofreciendo derivar la consulta a un humano por email o WhatsApp. Tú defines ese mensaje en la configuración.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA FINAL ========== -->
+  <section class="cta-final">
+    <div class="cta-final-contenido anim-reveal">
+      <h2>&gt; ¿Listo para automatizar tu atención al cliente?</h2>
+      <p>Sin IA. Sin costes ocultos. Sin complicaciones.</p>
+      <a href="/plataforma" class="btn btn-azul btn-grande">Probar gratis ahora</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-marca">
+        <p class="footer-logo">&gt; chatbot<span>3301</span></p>
+        <p class="footer-tagline">No es IA. Es lógica.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#por-que">¿Por qué sin IA?</a>
+        <a href="#planes">Planes</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-copy">
+        <p>Powered by <strong>La Fábrica</strong></p>
+        <p>© 2026 Chatbot3301</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
